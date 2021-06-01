@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marco Pagno</title>
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <div class="nav-top">
+        <a class="botao" href="#ajudenos">Ajude-nos</a>
+        <a class="botao" href="#interessado">Interessado</a>
+        <a class="botao" href="#atividades">Atividades Extras</a>
+        <a class="botao" href="#objetivos">Objetivos Profissionais</a>
+        <a class="botao" href="#formacao">Formação</a>
+        <a class="botao" href="#dadospessoais">Dados Pessoais</a>
+        <a id="header-logo" href="#top"> <img src="img/logo.png"> </a>
+    </div>
+      <div class="container" id="top">
+        <section class="container-center">
+            <div class="title-container">
+              <h1>Marco <br> Antonio</h1>
+              <h2>Estudante de Ciência da Computação</h2>
+            </div>
+            <div class="image-container">
+              <img src="img/foto.jpg" class="foto">
+            </div>
+        </section>
+      </div>
+      <div class="main">
+      <div id="dadospessoais">
+      <ul><h3 id="form">Dados Pessoais</h3>
+        <section class="conteudo">
+          <li>Marco Antonio Pagno Geraldo</li>
+          <li>Email: marcoapg@live.com</li>
+          <li>Celular: (41) 98705-9490</li>
+        </section>
+      </ul>
+      </div>
+      <div id="formacao">
+      <ul><h3 id="form">Formação</h3>
+      <section class="conteudo">
+        <p> Ensino Fundamental - Escola Vicentina Mercês </p>
+        <li>Turno manhã e tarde </li>
+        <li>Ingresso em 2004 e Conclusão em 2016</li>
+        <li>Formado sem repetências</li>
+        <p> Ensino Médio - Colégio Vicentino São José </p>
+        <li>Turno manhã</li>
+        <li>Ingresso em 2017 e Conclusão em 2019</li>
+        <li>Formado sem repetências</li>
+        <p> UP - Universidade Positivo </p>
+        <li>Turno manhã</li>
+        <li>Atualmente no Terceiro período</li>
+        <li>Ingresso em 2020 e futura Conclusão em 2023</li>
+      </ul>
+      </section>
+      </div>
+      <div id="objetivos">
+      <ul><h3 id="form">Objetivos Profissionais</h3>
+        <section class="conteudo">
+        <li>Busco um estágio para ganhar experiência de trabalho e na área de programação e sistemas, e em escritórios</li>
+        </section>
+      </ul>
+      </div>
+      <ul><h3 id="form">Idiomas</h3>
+        <section class="conteudo">
+          <li>Português Nativo</li>
+          <li>Inglês Avançado</li>
+        </section>
+      </ul>
+      <div id="atividades">
+      <ul><h3 id="form">Atividades Extras</h3>
+        <section class="conteudo">
+          <li>Diversas Participações em Olimpíadas de Matemática e Física</li>
+          <li>Formado em Curso de Inglês Wizard (3 Anos)</li>
+      <li>Curso de C++ online</li>
+          <li>Curso de Java online</li>
+        </section>
+      </ul>
+      </div>
+      <div id="interessado">
+      <ul><h3 id="form">Interessado?</h3>
+      </ul>
+      <section class="conteudo">
+        <form>
+        <p>Coloque seu email para contato: </p>
+        <input type="text" placeholder="Email: ">
+        </form>
+      </section>
+      </div>
+      <div id="ajudenos">
+      <ul><h3 id="form">Ajude nos</h3>
+      </ul>
+      <section class="conteudo">
+        <form>
+        <p>Recomendaria o site para alguem?</p>
+        <input type="radio" name="recomenda" value="S" onclick="document.getElementById('oculto').style.display='none '">
+        SIM
+        <input type="radio" name="recomenda" value="N" onclick="document.getElementById('oculto').style.display='block'">
+        NÃO
+        <textarea id="oculto" style="display: none" rows="10" cols="50" placeholder="Por Que?:"></textarea>
+
+      </form>
+        <form>
+        <p>Quais fatores podemos melhorar?</p>
+        <input type="checkbox" value="1">
+        Design
+        <input type="checkbox" value="2">
+        Funcionalidade
+        <input type="checkbox" value="3">
+        Objetividade
+        <input type="checkbox" value="4">
+        Organização
+      </form>
+        <form>
+        <p>De qual navegador você esta acessando?</p>
+        <select>
+          <option select="selected">
+          </option>
+          <option>
+            Chrome
+          </option>
+          <option>
+            Firefox
+          </option>
+          <option>
+            Microsoft Edge
+          </option>
+          <option>
+            Safari
+          </option>
+        </select>
+      </form>
+        <form>
+        <p>Tem uma sugestão para esse site? </p>
+        <textarea name="sugestoes" rows="10" cols="50" placeholder="Sugestao:"></textarea>
+        </form>
+        <button class="botao" onclick="myFunction()" type="submit" name="cadastrar">Enviar</button>
+        </div>
+      </section>
+      <footer>
+        <p>Escrito por Marco Pagno</p>
+        <p>2021</p>
+      </footer>
+    </div>
+    </center>
+    <script>
+      function myFunction(){
+          alert("Enviado com sucesso, Obrigado!");
+      }
+    </script>
+  </body>
+</html>
